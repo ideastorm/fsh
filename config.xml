@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        id = "com.ideastormsoftware.fsh"
+        version = "0.1.0">
+    <name>fsh</name>
+
+    <description>
+	An aquarium in your hand...
+    </description>
+
+    <author href="http://ideastormsoftware.com" email="contact@ideastormsoftware.com">
+        IdeaStorm Software
+    </author>
+
+    <preference name="phonegap-version" value="2.1.0" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+
+    <icon src="icon.png" />
+</widget>
