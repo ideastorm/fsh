@@ -82,9 +82,19 @@ function addFish() {
     fishies.push(new Fsh("pink", canvas));
 }
 
+function getResize(canvas) {
+  return function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+}
+
 function init() {
-    canvas = document.getElementById('tutorial');
+    canvas = document.createElement('canvas');
+    document.body.appendChild(canvas);
     canvas.onclick = addFish;
+    window.onresize = getResize(canvas);
+    window.onresize();
     setInterval(animate, 30);
 }
 
